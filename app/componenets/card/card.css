@@ -1,0 +1,46 @@
+html {
+    background-color: #9c9c9c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card {
+    height: 500px;
+    width: 350px;
+    background-color: #ffedd5;
+    border-radius: 15px;
+    box-shadow: #0000007d 0px 0px 14px 5px;
+    color: white;
+    font-size: large;
+}
+
+.card-back {
+    box-shadow: inset #caa47282 0px 0px 24px 13px;
+}
+
+p.card-text {
+    padding: 25px;
+    line-height: 1.45em;
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.card-flip {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*Remove only for demo*/
+    background-blend-mode: multiply;
+    /*^^^^^^^^^^^^^^^^^^^*/
+    animation: flip 1.5s linear 1;
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateY(-180deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
